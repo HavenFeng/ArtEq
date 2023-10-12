@@ -1,9 +1,18 @@
-## Generalizing Neural Human Fitting to Unseen Poses With Articulated SE(3) Equivariance
+## Generalizing Neural Human Fitting to Unseen Poses With Articulated SE(3) Equivariance (ICCV2023-Oral)
 
 \[[Project Page](https://arteq.is.tue.mpg.de/)\]
 \[[arXiv](https://arxiv.org/abs/2304.10528)\]
 
 ![Teaser](https://arteq.is.tue.mpg.de/media/upload/artieq_teaser2.png)
+
+This is the official Pytorch implementation of ArtEq. 
+
+ArtEq (pron: Artique) is a carefully designed and principled method that extends SE(3) equivariance to articulated structures, enabling the direct regression of SMPL parameters from a 3D point cloud, which 
+* has significant zero-shot pose generalization (45~60% better in V2V & MPJPE), 
+* is 1000x faster during inference time compared to competing methods, and 
+* has a 30x less network parameters than the SOTA.
+
+Please refer to the [arXiv paper](https://arxiv.org/abs/2304.10528) for more details.
 
 ## Table of Contents
 
@@ -66,9 +75,12 @@ python src/eval.py \
 
 or with `--paper_model`.
 
-### pretrained model release
 
-Coming soon!
+### TODO
+
+- [x] official repo
+- [ ] pretrained models release
+- [ ] ArtEq-XL code & model release (A much bigger ArtEq trained on AMASS)
 
 ## Citation
 
@@ -92,11 +104,7 @@ Here are some great resources we benefit:
 - [EPN](https://github.com/nintendops/EPN_PointCloud) for the point-wise SE(3) equivariance feature extraction.
 - [smplx](https://github.com/vchoutas/smplx) for the SMPL body model.
 
-
-We would also like to thank other recent public neural human fitting works that allow us to easily perform quantitative and qualitative comparisons :)  
-- [IPNet](https://github.com/bharat-b7/IPNet), 
-- [PTF](https://github.com/taconite/PTF), 
-- [LoopReg](https://github.com/bharat-b7/LoopReg)
+We would also like to thank other recent public neural human fitting works that allow us to easily perform quantitative and qualitative comparisons :) [IPNet](https://github.com/bharat-b7/IPNet), [PTF](https://github.com/taconite/PTF), [LoopReg](https://github.com/bharat-b7/LoopReg).
 
 This work was partly supported by the German Federal Ministry of Education and Research (BMBF): Tuebingen AI Center, FKZ: 01IS18039B
 
