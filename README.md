@@ -7,10 +7,10 @@
 
 This is the official Pytorch implementation of ArtEq. 
 
-ArtEq (pron: Artique) is a carefully designed and principled method that extends SE(3) equivariance to articulated structures, enabling the direct regression of SMPL parameters from a 3D point cloud, which 
+*ArtEq* (pron: Artique) is a carefully designed and principled method that extends SE(3) equivariance to articulated structures, enabling the direct regression of SMPL parameters from a 3D point cloud, which 
 * has significant zero-shot pose generalization (45~60% better in V2V & MPJPE), 
 * is 1000x faster during inference time compared to competing methods, and 
-* has a 30x less network parameters than the SOTA.
+* has 97.3% fewer parameters than the SOTA.
 
 Please refer to the [arXiv paper](https://arxiv.org/abs/2304.10528) for more details.
 
@@ -28,7 +28,7 @@ Please refer to the [arXiv paper](https://arxiv.org/abs/2304.10528) for more det
 ## License
 
 Software Copyright License for **non-commercial scientific research purposes**.
-Please read carefully the [terms and conditions](https://github.com/MPForte/sgnify/blob/master/LICENSE) and any accompanying documentation before you download and/or use the SGNify model, data and software, (the "Model & Software"), including 3D meshes, blend weights, blend shapes, textures, software, scripts, and animations. By downloading and/or using the Model & Software (including downloading, cloning, installing, and any other use of this github repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this [License](./LICENSE).
+Please read carefully the [terms and conditions](https://github.com/HavenFeng/ArtEq/blob/main/LICENSE) and any accompanying documentation before you download and/or use the ArtEq model, data and software, (the "Model & Software"), including 3D meshes, blend weights, blend shapes, textures, software, scripts, and animations. By downloading and/or using the Model & Software (including downloading, cloning, installing, and any other use of this github repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this [License](./LICENSE).
 
 ## Description
 
@@ -79,8 +79,8 @@ or with `--paper_model`.
 ### TODO
 
 - [x] official repo
-- [ ] pretrained models release
-- [ ] ArtEq-XL code & model release (A much bigger ArtEq trained on AMASS)
+- [ ] pretrained models release (The paper model, trained solely on the DFAUST train set of AMASS with fixed gaussian noise)
+- [ ] ArtEq-XL model release (A much bigger ArtEq trained on AMASS + real world data, stay tuned!)
 
 ## Citation
 
