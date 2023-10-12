@@ -5,7 +5,7 @@
 
 ![Teaser](https://arteq.is.tue.mpg.de/media/upload/artieq_teaser2.png)
 
-This is the official Pytorch implementation of ArtEq. 
+This is the official Pytorch implementation of *ArtEq*. 
 
 *ArtEq* (pron: Artique) is a carefully designed and principled method that extends SE(3) equivariance to articulated structures, enabling the direct regression of SMPL parameters from a 3D point cloud, which 
 * has significant zero-shot pose generalization (45~60% better in V2V & MPJPE), 
