@@ -1,0 +1,25 @@
+name: arteq
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - python==3.10.*
+  - pip
+  - git
+  - joblib
+  - numpy
+  - plyfile
+  - pre-commit
+  - pyg::pytorch-scatter
+  - pytorch::pytorch
+  - pytorch::pytorch-cuda=11.7
+  - scipy
+  - scikit-learn
+  - tqdm
+  - trimesh
+  - pip:
+      - smplx
+      - webdataset
+      - -e external/vgtk/vgtk
+      - -e external/vgtk
