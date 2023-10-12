@@ -66,6 +66,10 @@ python src/eval.py \
 
 or with `--paper_model`.
 
+### pretrained model release
+
+Coming soon!
+
 ## Citation
 
 If you find this Model & Software useful in your research we would kindly ask you to cite:
@@ -83,10 +87,21 @@ If you find this Model & Software useful in your research we would kindly ask yo
 
 ## Acknowledgments
 
-@TODO
+For functions or scripts that are based on external sources, we acknowledge the origin individually in each file.  
+Here are some great resources we benefit:  
+- [EPN](https://github.com/nintendops/EPN_PointCloud) for the point-wise SE(3) equivariance feature extraction.
+- [smplx](https://github.com/vchoutas/smplx) for the SMPL body model.
+
+
+We would also like to thank other recent public neural human fitting works that allow us to easily perform quantitative and qualitative comparisons :)  
+- [IPNet](https://github.com/bharat-b7/IPNet), 
+- [PTF](https://github.com/taconite/PTF), 
+- [LoopReg](https://github.com/bharat-b7/LoopReg)
+
+This work was partly supported by the German Federal Ministry of Education and Research (BMBF): Tuebingen AI Center, FKZ: 01IS18039B
 
 ## Contact
 
-For questions, please contact [hfeng@tue.mpg.de](mailto:hfeng@tue.mpg.de).
+For questions, please contact [haiwen.feng@tuebingen.mpg.de](mailto:haiwen.feng@tuebingen.mpg.de).
 
 For commercial licensing (and all related questions for business applications), please contact [ps-licensing@tue.mpg.de](mailto:ps-licensing@tue.mpg.de).
