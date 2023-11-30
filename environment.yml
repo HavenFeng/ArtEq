@@ -1,4 +1,4 @@
-name: arteq-2
+name: arteq
 channels:
   - nvidia
   - pytorch
